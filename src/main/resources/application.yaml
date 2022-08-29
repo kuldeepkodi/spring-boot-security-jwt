@@ -1,0 +1,24 @@
+
+spring:
+    datasource:
+        url: jdbc:mysql://localhost:3306/practice
+        username: root
+        password: root1221
+    jpa:
+        database-platform: org.hibernate.dialect.MySQL5Dialect
+        show-sql: true
+        properties:
+            hibernate:
+                format_sql: true
+        hibernate:
+            ddl-auto: update
+
+server:
+    error:
+        include-message: always
+        include-stacktrace: never
+        include-binding-errors: never
+
+jwt:
+    secret: secret
+    expiration: 3600000
